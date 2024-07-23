@@ -1,6 +1,7 @@
 import React from 'react';
 import { animals } from './amphibians';
 import './App.css';
+// import myImage from './images/dolphin.jpg'; // THIS CAN BE USED ONLY WHEN THE IMAGE IS IN SRC FOLDER PATH
 
 
 const displayFact = (e)=>{
@@ -45,8 +46,8 @@ function App() {
       <h1>{title === '' ? 'Click an animal for a fun fact' : title}</h1>
       {showBackground && background}
       <p id ='fact'></p>
-      <div className='animals'>{images}</div> 
-           
+      <div className='animals'>{images}</div>    
+      {/* <div><img src={myImage} /></div>         */}
     </div>
   );
 }
