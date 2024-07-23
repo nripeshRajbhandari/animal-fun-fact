@@ -1,4 +1,7 @@
 import React from 'react';
+import { animals } from './amphibians';
+import './App.css';
+
 
 const displayFact = (e)=>{
   const animal = e.target.alt;
@@ -42,7 +45,8 @@ function App() {
       <h1>{title === '' ? 'Click an animal for a fun fact' : title}</h1>
       {showBackground && background}
       <p id ='fact'></p>
-      <div className='animals'>{images}</div>  
+      <div className='animals'>{images}</div> 
+           
     </div>
   );
 }
